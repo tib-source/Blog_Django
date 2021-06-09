@@ -13,6 +13,7 @@
           <!-- Navbar Right Side -->
           {% if user.is_authenticated %}
           <div class="navbar-nav">
+            <a class="nav-item nav-link" href="{% url 'blog-create' %}">New Post</a>
             <a class="nav-item nav-link" href="{% url 'profile' %}">My Profile</a>
             <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
           </div>
